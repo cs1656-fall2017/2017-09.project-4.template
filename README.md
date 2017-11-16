@@ -37,11 +37,12 @@ The schema of the database is embedded in the `moviepro.py` Python script and sh
 ### Reading input from CSV files
 
 Your program should read input from the following CSV files:
-* `all_actors.csv`, containing data for the Actors table,  
-* `all_cast.csv`, containing data for the Cast table,  
-* `all_directors.csv`, containing data for the Directors table,  
-* `all_movie_dir.csv`, containing data for the Movie_Director table, and  
-* `all_movies.csv`, containing data for the Movies table.
+* `actors.csv`, containing data for the Actors table,  
+* `cast.csv`, containing data for the Cast table,  
+* `directors.csv`, containing data for the Directors table,  
+* `movie_dir.csv`, containing data for the Movie_Director table, and  
+* `movies.csv`, containing data for the Movies table.  
+
 All the data should be inserted into the appropriate tables into the `cs1656.sqlite` database. Sample insert statements have been provided in the `moviepro.py` script, but you are not restricted to doing the insertions in exactly the same way.
 
 Samples of all these files are provided as part of this repository.
@@ -49,27 +50,27 @@ Samples of all these files are provided as part of this repository.
 
 ### Queries
 
-You are asked to provide SQL queries that provide answers for the following questions. Note that **actors** refers to both male and female actors, unless explicitely specified otherwise. Also note that you should not rely on the data provided in the sample CSV files for any of the answers; the datasets will be replaced with bigger files.
+You are asked to provide SQL queries that provide answers for the following questions. Note that **actors** refers to both male and female actors, unless explicitely specified otherwise. Also note that you should not rely on the data provided in the sample CSV files for any of the answers; the datasets will be replaced with bigger files. Finally, please note that you may define views, etc, as part of other queries.
 
-* **[Q1]** List all the actors (first and last name) who acted in at least one film in the 1st half of the 20th century (1901-1950) and in at least one film in the 2nd half of the 20th century (1951 - 2000).  
+* **[Q01]** List all the actors (first and last name) who acted in at least one film in the 1st half of the 20th century (1901-1950) and in at least one film in the 2nd half of the 20th century (1951 - 2000).  
 
-* **[Q2]** List all the movies (title, year) that were released in the same year as the movie entitled `"Rogue One: A Star Wars Story"`, but had a better rank (Note: the higher the value in the *rank* attribute, the better the rank of the movie).  
+* **[Q02]** List all the movies (title, year) that were released in the same year as the movie entitled `"Rogue One: A Star Wars Story"`, but had a better rank (Note: the higher the value in the *rank* attribute, the better the rank of the movie).  
 
-* **[Q3]** List all the actors (first and last name) who played in the movie entitled `"Star Wars VII: The Force Awakens"`.  
+* **[Q03]** List all the actors (first and last name) who played in the movie entitled `"Star Wars VII: The Force Awakens"`.  
 
-* **[Q4]** Find the actor(s) (first and last name) who **only** acted in films released before 1985.   
+* **[Q04]** Find the actor(s) (first and last name) who **only** acted in films released before 1985.   
 
-* **[Q5]** List all the directors in descending order of the number of films they directed (first name, last name, number of films directed).  
+* **[Q05]** List the top 20 directors in descending order of the number of films they directed (first name, last name, number of films directed). For simplicity, feel free to ignore ties at the number 20 spot (i.e., always show up to 20 only).   
 
-* **[Q6]** Find the movie(s) with the largest cast (title, number of cast members). Note: show all movies in case of a tie.  
+* **[Q06]** Find the top 10 movie(s) with the largest cast (title, number of cast members) in decreasing order. Note: show all movies in case of a tie.  
 
-* **[Q7]** Find the movie(s) whose cast has more actresses than actors (i.e., gender=female vs gender=male).  Show the title, the number of actresses, and the number of actors in the results.  
+* **[Q07]** Find the movie(s) whose cast has more actresses than actors (i.e., gender=female vs gender=male).  Show the title, the number of actresses, and the number of actors in the results.  
 
-* **[Q8]** Find all the actors who have worked with at least 7 different directors (i.e., acted in at least 7 different movies with distinct directors). Show the actor's first, last name, and the number of directors he/she has worked with.
+* **[Q08]** Find all the actors who have worked with at least 6 different directors (i.e., acted in at least 6 different movies with distinct directors). Show the actor's first, last name, and the number of directors he/she has worked with.
 
-* **[Q9]** For every actor, count the movies that he/she appeared in his/her debut year (i.e., year of their first movie). Show the actor's first and last name, plus the count. Sort by decreasing order of the count.  
+* **[Q09]** For all actors born in 1984, count the movies that he/she appeared in his/her debut year (i.e., year of their first movie). Show the actor's first and last name, plus the count. Sort by decreasing order of the count.  
 
-* **[Q10]** Find instances of nepotism between actors and directors, i.e., an actor in a movie and the director have the same last name. Show the last name and the title of the movie, sorted alphabetically by last name.  
+* **[Q10]** Find instances of nepotism between actors and directors, i.e., an actor in a movie and the director having the same last name. Show the last name and the title of the movie, sorted alphabetically by last name.  
 
 * **[Q11]** The Bacon number of an actor is the length of the shortest path between the actor and Kevin Bacon in the *"co-acting"* graph. That is, Kevin Bacon has Bacon number 0; all actors who acted in the same movie as him have Bacon number 1; all actors who acted in the same film as some actor with Bacon number 1 have Bacon number 2, etc. List all actors whose Bacon number is 2 (first name, last name). You can familiarize yourself with the concept, by visiting [The Oracle of Bacon](https://oracleofbacon.org).  
 
