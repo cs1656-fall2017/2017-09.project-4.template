@@ -68,7 +68,7 @@ You are asked to provide SQL queries that provide answers for the following ques
 
 * **[Q08]** Find all the actors who have worked with at least 6 different directors (i.e., acted in at least 6 different movies with distinct directors). Show the actor's first, last name, and the number of directors he/she has worked with.
 
-* **[Q09]** For all actors born in 1984, count the movies that he/she appeared in his/her debut year (i.e., year of their first movie). Show the actor's first and last name, plus the count. Sort by decreasing order of the count.  
+* **[Q09]** For all actors whose first name starts with an S, count the movies that he/she appeared in his/her debut year (i.e., year of their first movie). Show the actor's first and last name, plus the count. Sort by decreasing order of the count.  
 
 * **[Q10]** Find instances of nepotism between actors and directors, i.e., an actor in a movie and the director having the same last name. Show the last name and the title of the movie, sorted alphabetically by last name.  
 
