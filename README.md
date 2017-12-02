@@ -6,7 +6,7 @@
 > 
 > Assignment: #3
 > Released: November 15, 2017  
-> **Due:      December 3, 2017**
+> **Due:      December 6, 2017 (NEW / NO LATE SUBMISSIONS) **
 
 ### Description
 This is the **fourth assignment** for the CS 1656 -- Introduction to Data Science (CS 2056) class, for the Fall 2017 semester.
@@ -107,9 +107,8 @@ If you would like to use any other libraries, you must ask permission by Wednesd
 
 ### How to submit your assignment
 For this assignment, you must use the repository that was created for you after visiting the classroom link. You need to update the  file `moviepro.py` as described above, and add other files that are needed for running your program. You need to make sure to commit your code to the repository provided. We will clone all repositories shortly after midnight:  
-* the day of the deadline **Sunday, December 3, 2017 (i.e., at 12:15am, Monday, December 4, 2017)**  
-* 24 hours later (for submissions that are one day late / -5 points), and  
-* 48 hours after the first deadline (for submissions that are two days late / -15 points). 
+* the day of the deadline **Wednesday, December 6, 2017 (i.e., at 12:15am, Thursday, December 7, 2017)**  
+
 
 Our assumption is that everybody will submit on the first deadline. If you want us to grade a late submission, you need to email us at `cs1656-staff@cs.pitt.edu`
 
